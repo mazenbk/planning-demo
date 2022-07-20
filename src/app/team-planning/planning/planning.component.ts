@@ -298,11 +298,6 @@ export class PlanningComponent implements OnInit, AfterViewInit  {
     let cellElement = item.cellElement;
     let day:String = cellElement.name;
     alert(`Click on Action 1 for ${day}`);
-
-    this.dataSource = new MatTableDataSource(this.planningService.getDataElementGlobal());
-      
-    this.allData = this.dataSource.data;
-    this.dataSource.data = this.allData;
   }
 } 
 
