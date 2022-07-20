@@ -1,0 +1,1235 @@
+h1 {
+    text-align: center;
+}
+
+.header_planning {
+    width: '100%';
+    height: 22px;
+    background-color: #282828;
+    color: #FFFFFF;
+    font-family: 'open Sans', sans-serif !important;
+    font-size: 12px;
+}
+
+:root {
+    --isc-theme_name: Tahoe;
+    --isc-primary_font: RobotoLight;
+    --isc-secondary_font: corbel;
+    --isc-secondary_font_bold: corbel-bold;
+    --isc-tertiary_font: calibri;
+    --isc-standard_body_font: var(--isc-tertiary_font);
+    --isc-standard_header_font: var(--isc-tertiary_font);
+    --isc-standard_tab_font: var(--isc-secondary_font);
+    --isc-standard_hover_font: var(--isc-standard_body_font);
+    --isc-normal_font_size: 12px;
+    --isc-standard_font_size: 11px;
+    --isc-standard_small_font_size: 9px;
+    --isc-standard_header_font_size: 14px;
+    --isc-secondary_header_font_size: 12.58px;
+    --isc-standard_header_font_weight: bold;
+    --isc-standard_font_weight: normal;
+    --isc-standard_line_height: 18px;
+    --isc-highlight_color: #47a7e3;
+    --isc-active_text_color: #ffffff;
+    --isc-active_bgColor: var(--isc-highlight_color);
+    --isc-active_border_color: #157fcc;
+    --isc-active_over_bgColor: #b6e3ff;
+    --isc-active_selected_bgColor: #5fbaf2;
+    --isc-active_disabled_bgColor: #d0d0d0;
+    --isc-standard_blue: #0000FF;
+    --isc-standard_color: #282828;
+    --isc-standard_bgColor: #ffffff;
+    --isc-secondary_bgColor: #fafafa;
+    --isc-page_bgColor: transparent;
+    --isc-standard_border_color: #d0d0d0;
+    --isc-standard_shadow: none;
+    --isc-standard_header_color: var(--isc-active_text_color);
+    --isc-standard_header_bgColor: #47a7e3;
+    --isc-standard_header_dark_bgColor: #157fcc;
+    --isc-secondary_header_bgColor: #f0f0f0;
+    --isc-secondary_header_color: #616161;
+    --isc-standard_widget_border_color: var(--isc-standard_border_color);
+    --isc-standard_widget_bgColor: var(--isc-standard_bgColor);
+    --isc-default_glow_color: #1f99ef;
+    --isc-default_outset_glow: 0 0 0.2em 0.1em var(--isc-default_glow_color);
+    --isc-default_inset_glow: inset 0 0 0.2em 0.1em var(--isc-default_glow_color);
+    --isc-standard_opacity: 1;
+    --isc-standard_padding: 0px;
+    --isc-standard_border_width: 1px;
+    --isc-standard_border_radius: 0px;
+    --isc-standard_border_style: solid;
+    --isc-standard_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-standard_border_color);
+    --isc-standard_transparent_border: var(--isc-standard_border_width) var(--isc-standard_border_style) transparent;
+    --isc-default_border_dark_color: #cccccc;
+    --isc-general_button_focused_border_color: #005491;
+    --isc-default_disabled_text_color: #ababab;
+    --isc-button_font: var(--isc-secondary_font);
+    --isc-button_font_size: var(--isc-standard_font_size);
+    --isc-button_font_weight: var(--isc-standard_font_weight);
+    --isc-button_padding: 5px;
+    --isc-button_line_height: var(--isc-standard_line_height);
+    --isc-button_color: var(--isc-standard_header_color);
+    --isc-button_bgColor: #157fcc;
+    --isc-button_border_color: var(--isc-button_bgColor);
+    --isc-button_border_width: 2px;
+    --isc-button_border_radius: var(--isc-standard_border_radius);
+    --isc-button_border: var(--isc-button_border_width) var(--isc-standard_border_style) var(--isc-button_border_color);
+    --isc-button_shadow: none;
+    --isc-button_over_color: var(--isc-button_color);
+    --isc-button_over_bgColor: var(--isc-button_bgColor);
+    --isc-button_over_border_color: var(--isc-button_border_color);
+    --isc-button_over_border: var(--isc-button_border_width) var(--isc-standard_border_style) var(--isc-button_over_border_color);
+    --isc-button_over_shadow: 0 0 0.2em 0.1em var(--isc-default_glow_color);
+    --isc-button_focused_color: var(--isc-button_color);
+    --isc-button_focused_bgColor: #1d71ae;
+    --isc-button_focused_border_color: #005491;
+    --isc-button_focused_border: var(--isc-button_border_width) var(--isc-standard_border_style) var(--isc-button_focused_border_color);
+    --isc-button_focused_shadow: none;
+    --isc-button_focused_over_color: var(--isc-button_color);
+    --isc-button_focused_over_bgColor: var(--isc-button_focused_bgColor);
+    --isc-button_focused_over_border_color: #003760;
+    --isc-button_focused_over_border: var(--isc-button_border_width) var(--isc-standard_border_style) var(--isc-button_focused_over_border_color);
+    --isc-button_focused_over_shadow: 0 0 5px var(--isc-default_glow_color);
+    --isc-button_down_bgColor: var(--isc-button_over_bgColor);
+    --isc-button_down_color: var(--isc-button_over_color);
+    --isc-button_down_border_color: var(--isc-button_focused_border_color);
+    --isc-button_down_border: var(--isc-button_border_width) var(--isc-standard_border_style) var(--isc-button_down_border_color);
+    --isc-button_down_glow: inset 0 0 5px 1px var(--isc-button_down_border_color);
+    --isc-button_selected_bgColor: var(--isc-button_over_bgColor);
+    --isc-button_selected_color: var(--isc-button_over_color);
+    --isc-button_selected_border_color: var(--isc-button_focused_border_color);
+    --isc-button_selected_border: var(--isc-button_border_width) var(--isc-standard_border_style) var(--isc-button_selected_border_color);
+    --isc-button_selected_shadow: inset 0 0 5px 1px var(--isc-button_down_border_color);
+    --isc-button_disabled_color: var(--isc-default_disabled_text_color);
+    --isc-button_disabled_bgColor: #dadada;
+    --isc-button_disabled_border_color: #dadada;
+    --isc-button_disabled_border: var(--isc-button_border_width) var(--isc-standard_border_style) var(--isc-button_disabled_border_color);
+    --isc-button_deselected_disabled_color: #a8a8a8;
+    --isc-menuButton_font: var(--isc-button_font);
+    --isc-menuButton_font_size: var(--isc-button_font_size);
+    --isc-menuButton_line_height: var(--isc-standard_line_height);
+    --isc-menuButton_padding: 0px 0px 0px 6px;
+    --isc-menuButton_color: var(--isc-button_color);
+    --isc-menuButton_bgColor: var(--isc-button_bgColor);
+    --isc-menuButton_border_color: var(--isc-button_border_color);
+    --isc-menuButton_border_width: var(--isc-button_border_width);
+    --isc-menuButton_border_radius: var(--isc-button_border_radius);
+    --isc-menuButton_border: var(--isc-menuButton_border_width) var(--isc-standard_border_style) var(--isc-menuButton_border_color);
+    --isc-menuButton_shadow: var(--isc-button_shadow);
+    --isc-menuButton_over_color: var(--isc-menuButton_color);
+    --isc-menuButton_over_bgColor: var(--isc-menuButton_bgColor);
+    --isc-menuButton_over_border_color: var(--isc-menuButton_border_color);
+    --isc-menuButton_over_border: var(--isc-menuButton_border_width) var(--isc-standard_border_style) var(--isc-menuButton_over_border_color);
+    --isc-menuButton_over_shadow: var(--isc-button_over_shadow);
+    --isc-menuButton_focused_color: var(--isc-menuButton_color);
+    --isc-menuButton_focused_bgColor: #1d71ae;
+    --isc-menuButton_focused_border_color: #005491;
+    --isc-menuButton_focused_border: var(--isc-menuButton_border_width) var(--isc-standard_border_style) var(--isc-menuButton_focused_border_color);
+    --isc-menuButton_focused_shadow: var(--isc-button_focused_shadow);
+    --isc-menuButton_focused_over_color: var(--isc-menuButton_over_color);
+    --isc-menuButton_focused_over_bgColor: var(--isc-menuButton_focused_bgColor);
+    --isc-menuButton_focused_over_border_color: var(--isc-menuButton_focused_border_color);
+    --isc-menuButton_focused_over_border: var(--isc-menuButton_border_width) var(--isc-standard_border_style) var(--isc-menuButton_focused_over_border_color);
+    --isc-menuButton_focused_over_shadow: var(--isc-button_focused_over_shadow);
+    --isc-menuButton_down_color: var(--isc-menuButton_focused_color);
+    --isc-menuButton_down_bgColor: var(--isc-menuButton_focused_bgColor);
+    --isc-menuButton_down_border_color: var(--isc-button_down_border_color);
+    --isc-menuButton_down_border: var(--isc-menuButton_border_width) var(--isc-standard_border_style) var(--isc-menuButton_down_border_color);
+    --isc-menuButton_down_glow: inset 0 0 5px 1px var(--isc-menuButton_down_border_color);
+    --isc-menuButton_disabled_color: var(--isc-button_disabled_color);
+    --isc-menuButton_disabled_bgColor: var(--isc-button_disabled_bgColor);
+    --isc-menuButton_disabled_border_color: var(--isc-button_disabled_border_color);
+    --isc-menuButton_disabled_border: var(--isc-menuButton_border_width) var(--isc-standard_border_style) var(--isc-menuButton_disabled_border_color);
+    --isc-menuButton_opened_shadow: none;
+    --isc-window_border_color: var(--isc-standard_border_color);
+    --isc-window_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-window_border_color);
+    --isc-window_shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.05);
+    --isc-window_body_padding: 0px 2px 2px 2px;
+    --isc-window_body_bgColor: var(--isc-standard_bgColor);
+    --isc-window_header_font: var(--isc-standard_header_font);
+    --isc-window_header_font_size: var(--isc-standard_header_font_size);
+    --isc-window_header_padding: 10px;
+    --isc-window_header_line_height: 17px;
+    --isc-window_header_color: var(--isc-standard_header_color);
+    --isc-window_header_bgColor: var(--isc-standard_header_bgColor);
+    --isc-window_status_font_size: var(--isc-standard_font_size);
+    --isc-window_status_color: var(--isc-button_bgColor);
+    --isc-window_status_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-window_status_padding: 7px;
+    --isc-dialog_border_color: var(--isc-standard_border_color);
+    --isc-dialog_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-dialog_border_color);
+    --isc-dialog_shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.05);
+    --isc-dialog_body_padding: 0px 2px 2px 2px;
+    --isc-dialog_body_bgColor: var(--isc-standard_bgColor);
+    --isc-dialog_header_font: var(--isc-standard_header_font);
+    --isc-dialog_header_font_size: var(--isc-standard_header_font_size);
+    --isc-dialog_header_padding: var(--isc-window_header_padding);
+    --isc-dialog_header_line_height: var(--isc-window_header_line_height);
+    --isc-dialog_header_color: var(--isc-window_header_color);
+    --isc-dialog_header_bgColor: var(--isc-window_header_bgColor);
+    --isc-dialog_header_border: var(--isc-dialog_border);
+    --isc-dialog_status_font_size: var(--isc-window_status_font_size);
+    --isc-dialog_status_color: var(--isc-button_bgColor);
+    --isc-dialog_status_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-dialog_status_padding: 7px;
+    --isc-dialog_toolbar_bgColor: transparent;
+    --isc-dialog_toolbar_border: none;
+    --isc-menu_font: var(--isc-primary_font);
+    --isc-menu_font_size: var(--isc-standard_font_size);
+    --isc-menu_padding: 2px;
+    --isc-menu_title_padding: 4px;
+    --isc-menu_color: var(--isc-standard_color);
+    --isc-menu_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-menu_border_color: var(--isc-standard_widget_border_color);
+    --isc-menu_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-menu_border_color);
+    --isc-menu_shadow: 0 0 15px 5px rgba(0, 0, 0, 0.03);
+    --isc-menu_over_color: var(--isc-active_text_color);
+    --isc-menu_over_bgColor: var(--isc-standard_header_dark_bgColor);
+    --isc-menu_over_brightness: 400%;
+    --isc-menu_disabled_color: #999999;
+    --isc-menu_selected_color: var(--isc-menu_over_color);
+    --isc-menu_selected_bgColor: #3fa3ec;
+    --isc-menuItem_border_color: transparent;
+    --isc-menuItem_border_width: var(--isc-standard_border_width);
+    --isc-menuItem_border: var(--isc-menuItem_border_width) var(--isc-standard_border_style) var(--isc-menuItem_border_color);
+    --isc-tabSet_container_color: var(--isc-standard_color);
+    --isc-tabSet_container_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-tabSet_container_border_color: var(--isc-standard_widget_border_color);
+    --isc-tabSet_container_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-tabSet_container_border_color);
+    --isc-tabSet_container_font_size: var(--isc-standard_font_size);
+    --isc-tabSet_scroller_bgColor: #e6e6e6;
+    --isc-tabSet_scroller_sprite_image: url("../assets/images/TabSet/controls-btn.png");
+    --isc-tabSet_scroller_border_radius: 3px;
+    --isc-tabSet_picker_bgColor: #e6e6e6;
+    --isc-tabSet_picker_sprite_image: url("../assets/images/TabSet/controls-btn.png");
+    --isc-tabButton_font: var(--isc-secondary_font_bold);
+    --isc-tabButton_font_size: var(--isc-button_font_size);
+    --isc-tabButton_marginRight: 3px;
+    --isc-tabButton_h_padding: 0px 27px;
+    --isc-tabButton_v_padding: 10px 0px;
+    --isc-tabButton_iconOnly_h_padding: 0px 12px;
+    --isc-tabButton_iconOnly_v_padding: 12px 0px;
+    --isc-tabButton_color: var(--isc-button_color);
+    --isc-tabButton_bgColor: #84c1ed;
+    --isc-tabButton_border_color: #84c1ed;
+    --isc-tabButton_border_width: var(--isc-button_border_width);
+    --isc-tabButton_border_radius: 4px;
+    --isc-tabButton_border: var(--isc-tabButton_border_width) var(--isc-standard_border_style) var(--isc-tabButton_border_color);
+    --isc-tabButton_over_color: var(--isc-tabButton_color);
+    --isc-tabButton_over_bgColor: var(--isc-tabButton_bgColor);
+    --isc-tabButton_over_border_color: var(--isc-tabButton_border_color);
+    --isc-tabButton_over_border: var(--isc-tabButton_border_width) var(--isc-standard_border_style) var(--isc-tabButton_over_border_color);
+    --isc-tabButton_over_shadow: var(--isc-button_over_shadow);
+    --isc-tabButton_focused_color: var(--isc-tabButton_color);
+    --isc-tabButton_focused_bgColor: #157fcc;
+    --isc-tabButton_focused_border_color: #005491;
+    --isc-tabButton_focused_border: var(--isc-tabButton_border_width) var(--isc-standard_border_style) var(--isc-tabButton_focused_border_color);
+    --isc-tabButton_focused_shadow: none;
+    --isc-tabButton_focused_over_color: var(--isc-tabButton_focused_color);
+    --isc-tabButton_focused_over_bgColor: var(--isc-tabButton_over_bgColor);
+    --isc-tabButton_focused_over_border_color: var(--isc-tabButton_focused_border_color);
+    --isc-tabButton_focused_over_border: var(--isc-tabButton_border_width) var(--isc-standard_border_style) var(--isc-tabButton_focused_over_border_color);
+    --isc-tabButton_focused_over_shadow: none;
+    --isc-tabButton_top_down_shadow: inset -10px 0px 10px -11px var(--isc-tabButton_focused_border_color), inset 10px 10px 10px -11px var(--isc-tabButton_focused_border_color);
+    --isc-tabButton_bottom_down_shadow: inset -10px 0px 10px -11px var(--isc-tabButton_focused_border_color), inset 10px -10px 10px -11px var(--isc-tabButton_focused_border_color);
+    --isc-tabButton_left_down_shadow: inset 10px 10px 10px -11px var(--isc-tabButton_focused_border_color), inset 0px -10px 10px -11px var(--isc-tabButton_focused_border_color);
+    --isc-tabButton_right_down_shadow: inset -10px 10px 10px -11px var(--isc-tabButton_focused_border_color), inset 0px -10px 10px -11px var(--isc-tabButton_focused_border_color);
+    --isc-tabButton_selected_font: var(--isc-tabButton_font);
+    --isc-tabButton_selected_color: var(--isc-tabButton_over_color);
+    --isc-tabButton_selected_bgColor: #157fcc;
+    --isc-tabButton_selected_border_color: var(--isc-tabButton_focused_border_color);
+    --isc-tabButton_selected_border: var(--isc-tabButton_border_width) var(--isc-standard_border_style) var(--isc-tabButton_selected_border_color);
+    --isc-tabButton_selected_over_color: var(--isc-tabButton_selected_color);
+    --isc-tabButton_selected_over_bgColor: var(--isc-tabButton_selected_bgColor);
+    --isc-tabButton_selected_over_border_color: var(--isc-tabButton_selected_border_color);
+    --isc-tabButton_selected_over_border: var(--isc-tabButton_border_width) var(--isc-standard_border_style) var(--isc-tabButton_selected_over_border_color);
+    --isc-tabButton_selected_focused_over_color: var(--isc-tabButton_selected_color);
+    --isc-tabButton_selected_focused_over_bgColor: #157fcc;
+    --isc-tabButton_selected_focused_over_border_color: var(--isc-tabButton_selected_over_border_color);
+    --isc-tabButton_selected_focused_over_border: var(--isc-tabButton_border_width) var(--isc-standard_border_style) var(--isc-tabButton_selected_focused_over_border_color);
+    --isc-tabButton_down_border_color: var(--isc-tabButton_border_color);
+    --isc-tabButton_down_border: var(--isc-tabButton_border_width) var(--isc-standard_border_style) var(--isc-tabButton_down_border_color);
+    --isc-tabButton_disabled_color: var(--isc-button_disabled_color);
+    --isc-tabButton_disabled_bgColor: var(--isc-button_disabled_bgColor);
+    --isc-tabButton_disabled_border_color: var(--isc-button_disabled_border_color);
+    --isc-tabButton_disabled_border: var(--isc-tabButton_border_width) var(--isc-standard_border_style) var(--isc-tabButton_disabled_border_color);
+    --isc-tabButton_contactEdge_border_width: 0px;
+    --isc-tabButton_contactEdge_border_color: transparent;
+    --isc-tabButton_contactEdge_border: var(--isc-tabButton_contactEdge_border_width) var(--isc-standard_border_style) var(--isc-tabButton_contactEdge_border_color);
+    --isc-tabButton_contactEdge_over_border_color: transparent;
+    --isc-tabButton_contactEdge_over_border: var(--isc-tabButton_contactEdge_border_width) var(--isc-standard_border_style) var(--isc-tabButton_contactEdge_over_border_color);
+    --isc-tabButton_contactEdge_focused_border_color: var(--isc-tabButton_contactEdge_over_border_color);
+    --isc-tabButton_contactEdge_focused_border: var(--isc-tabButton_contactEdge_border_width) var(--isc-standard_border_style) var(--isc-tabButton_contactEdge_focused_border_color);
+    --isc-tabButton_contactEdge_selected_border_color: var(--isc-tabButton_contactEdge_focused_border_color);
+    --isc-tabButton_contactEdge_selected_border: var(--isc-tabButton_contactEdge_border_width) var(--isc-standard_border_style) var(--isc-tabButton_contactEdge_selected_border_color);
+    --isc-tabButton_contactEdge_selected_over_border_color: var(--isc-tabButton_contactEdge_focused_border_color);
+    --isc-tabButton_contactEdge_selected_over_border: var(--isc-tabButton_contactEdge_border_width) var(--isc-standard_border_style) var(--isc-tabButton_contactEdge_selected_over_border_color);
+    --isc-tabBar_bgColor: transparent;
+    --isc-tabBar_baseLine_bgColor: #9C9C9C;
+    --isc-sectionStack_bgColor: transparent;
+    --isc-sectionStack_border_color: var(--isc-standard_widget_border_color);
+    --isc-sectionStack_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-sectionStack_border_color);
+    --isc-sectionStack_top_border: none;
+    --isc-sectionHeader_font: var(--isc-standard_header_font);
+    --isc-sectionHeader_font_size: var(--isc-secondary_header_font_size);
+    --isc-sectionHeader_paddingLeft: 10px;
+    --isc-sectionHeader_paddingRight: 0px;
+    --isc-sectionHeader_color: var(--isc-secondary_header_color);
+    --isc-sectionHeader_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-sectionHeader_border_radius: var(--isc-standard_border_radius);
+    --isc-sectionHeader_border: var(--isc-sectionStack_border);
+    --isc-sectionHeader_bottom_border: var(--isc-sectionHeader_border);
+    --isc-sectionHeader_disabled_text_color: var(--isc-default_disabled_text_color);
+    --isc-sectionHeader_disabled_bgColor: var(--isc-button_disabled_bgColor);
+    --isc-sectionHeader_disabled_border_color: var(--isc-button_disabled_border_color);
+    --isc-sectionHeader_disabled_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-sectionHeader_disabled_border_color);
+    --isc-navBar_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-navBar_border_color: var(--isc-standard_widget_border_color);
+    --isc-navBar_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-navBar_border_color);
+    --isc-navBar_header_font_size: 15px;
+    --isc-navBar_header_font: var(--isc-primary_font);
+    --isc-navBar_header_color: var(--isc-secondary_header_color);
+    --isc-navButton_font: var(--isc-primary_font);
+    --isc-navButton_font_size: var(--isc-standard_header_font_size);
+    --isc-navButton_padding: 0px 10px 0px 7px;
+    --isc-navButton_forward_padding: 0px 10px 0px 10px;
+    --isc-navButton_line_height: 24px;
+    --isc-navButton_color: var(--isc-standard_color);
+    --isc-navButton_bgColor: var(--isc-navBar_bgColor);
+    --isc-navButton_border_color: transparent;
+    --isc-navButton_border_width: var(--isc-standard_border_width);
+    --isc-navButton_border_radius: 3px;
+    --isc-navButton_border: var(--isc-navButton_border_width) var(--isc-standard_border_style) var(--isc-navButton_border_color);
+    --isc-navButton_over_border_color: #929292;
+    --isc-navButton_over_border_width: var(--isc-navButton_border_width);
+    --isc-navButton_over_border: var(--isc-navButton_over_border_width) var(--isc-standard_border_style) var(--isc-navButton_over_border_color);
+    --isc-navButton_selected_color: var(--isc-secondary_header_bgColor);
+    --isc-navButton_selected_bgColor: #616161;
+    --isc-navButton_selected_border_color: #929292;
+    --isc-navButton_selected_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-navButton_selected_border_color);
+    --isc-form_title_color: #003168;
+    --isc-formItem_font: var(--isc-primary_font);
+    --isc-formItem_font_size: 12.58px;
+    --isc-formItem_padding: 2px 9px;
+    --isc-formItem_opacity: 1;
+    --isc-formItem_color: var(--isc-standard_color);
+    --isc-formItem_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-formItem_border_color: #b8b8b8;
+    --isc-formItem_border_width: var(--isc-standard_border_width);
+    --isc-formItem_border_radius: var(--isc-standard_border_radius);
+    --isc-formItem_border: var(--isc-formItem_border_width) var(--isc-standard_border_style) var(--isc-formItem_border_color);
+    --isc-formItem_shadow: none;
+    --isc-formItem_focused_color: var(--isc-formItem_color);
+    --isc-formItem_focused_border_color: var(--isc-active_border_color);
+    --isc-formItem_focused_border: var(--isc-formItem_border_width) var(--isc-standard_border_style) var(--isc-formItem_focused_border_color);
+    --isc-formItem_focused_bgColor: var(--isc-formItem_bgColor);
+    --isc-formItem_focused_shadow: none;
+    --isc-formItem_over_color: var(--isc-formItem_color);
+    --isc-formItem_over_bgColor: var(--isc-formItem_bgColor);
+    --isc-formItem_over_border_color: var(--isc-formItem_focused_border_color);
+    --isc-formItem_over_border: var(--isc-formItem_border_width) var(--isc-standard_border_style) var(--isc-formItem_over_border_color);
+    --isc-formItem_over_shadow: 0 0 5px 0 var(--isc-formItem_over_border_color);
+    --isc-formItem_focused_over_border_color: var(--isc-formItem_focused_border_color);
+    --isc-formItem_focused_over_border: var(--isc-formItem_border_width) var(--isc-standard_border_style) var(--isc-formItem_focused_over_border_color);
+    --isc-formItem_focused_over_shadow: 0 0 5px 0 var(--isc-formItem_focused_over_border_color), inset 0 0 5px 0 var(--isc-formItem_focused_over_border_color);
+    --isc-formItem_disabled_color: var(--isc-default_disabled_text_color);
+    --isc-formItem_disabled_bgColor: #e2e2e2;
+    --isc-formItem_disabled_border_color: var(--isc-formItem_border_color);
+    --isc-formItem_disabled_border: var(--isc-formItem_border_width) var(--isc-standard_border_style) var(--isc-formItem_disabled_border_color);
+    --isc-formItem_hint_color: #999999;
+    --isc-formItem_hint_padding: 3px;
+    --isc-formItem_error_color: #8f2227;
+    --isc-formItem_error_border: var(--isc-formItem_border_width) var(--isc-standard_border_style) var(--isc-formItem_border_color);
+    --isc-headerItem_color: #4d4d4d;
+    --isc-uploadItem_bgColor: var(--isc-formItem_bgColor);
+    --isc-uploadItem_border: none;
+    --isc-uploadItem_padding: var(--isc-standard_padding);
+    --isc-pickerSearchBox_padding: 4px 6px 4px 6px;
+    --isc-pickerSearchBox_border_radius: 3px;
+    --isc-pickerIcon_left_border: none;
+    --isc-nativeDateItem_padding: 4px 2px 4px 2px;
+    --isc-combobox_item_picker_icon: url(../assets/images/pickers/down.png);
+    --isc-combobox_item_picker_over_icon: url(../assets/images/pickers/down.png);
+    --isc-combobox_item_picker_focused_over_icon: url(../assets/images/pickers/down.png);
+    --isc-combobox_item_picker_disabled_icon: url(../assets/images/pickers/down_Disabled.png);
+    --isc-select_item_lite_control_focused_outline: none;
+    --isc-spinner_increase_icon_offset: 0px 18px;
+    --isc-spinner_increase_icon_offset_disabled: -16px 18px;
+    --isc-spinner_increase_icon_offset_over: -31px 18px;
+    --isc-spinner_decrease_icon_offset: 0px -4px;
+    --isc-spinner_decrease_icon_offset_disabled: -16px -4px;
+    --isc-spinner_decrease_icon_offset_over: -31px -4px;
+    --isc-spinner_icon_sprite: url(../assets/images/DynamicForm/spinner_control_sprite_transparent.png);
+    --isc-spinner_icon_sprite_rtl: url(../assets/images/DynamicForm/spinner_control_sprite_transparent_rtl.png);
+    --isc-spinner_unstacked_icon_bgColor: var(--isc-formItem_bgColor);
+    --isc-pending_value_color: #0066cc;
+    --isc-pending_value_dark_color: #981c65;
+    --isc-listGrid_specialCol_line_height: 22px;
+    --isc-listGrid_recordEditor_line_height: 22px;
+    --isc-listGrid_message_padding: 11px;
+    --isc-listGrid_body_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-listGrid_sortNumeral_font_size: 7px;
+    --isc-listGrid_summaryCell_font_size: 12.5px;
+    --isc-listGrid_summaryCell_fontWeight: bold;
+    --isc-listGrid_cell_font_size: var(--isc-normal_font_size);
+    --isc-listGrid_cell_font: var(--isc-standard_body_font);
+    --isc-listGrid_headerButton_font: var(--isc-standard_header_font);
+    --isc-listGrid_headerButton_font_size: var(--isc-normal_font_size);
+    --isc-listGrid_headerButton_font_weight: var(--isc-standard_header_font_weight);
+    --isc-listGrid_headerButton_letterSpacing: 0.3px;
+    --isc-listGrid_headerButton_padding: 0px 0px 0px 3px;
+    --isc-listGrid_headerButton_rotated_padding: 3px 0px 3px 0px;
+    --isc-listGrid_glow_color: var(--isc-default_glow_color);
+    --isc-listGrid_border_color: var(--isc-standard_widget_border_color);
+    --isc-listGrid_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-listGrid_border_color);
+    --isc-listGrid_dragTracker_padding: 1px;
+    --isc-listGrid_dragTracker_border: var(--isc-standard_border_width) dotted var(--isc-standard_border_color);
+    --isc-listGrid_headerBar_bgColor: var(--isc-standard_header_bgColor);
+    --isc-listGrid_headerBar_bottom_border: none;
+    --isc-listGrid_headerBar_gradient_color: #b6bdc9;
+    --isc-listGrid_headerButton_color: var(--isc-standard_header_color);
+    --isc-listGrid_headerButton_bgColor: var(--isc-standard_header_bgColor);
+    --isc-listGrid_headerButton_border: none;
+    --isc-listGrid_headerButton_over_color: var(--isc-listGrid_headerButton_color);
+    --isc-listGrid_headerButton_over_bgColor: #66bef5;
+    --isc-listGrid_headerButton_selected_color: var(--isc-listGrid_headerButton_color);
+    --isc-listGrid_headerButton_selected_bgColor: #157fcc;
+    --isc-listGrid_headerButton_selected_over_color: var(--isc-listGrid_headerButton_over_color);
+    --isc-listGrid_headerButton_selected_over_bgColor: var(--isc-listGrid_headerButton_over_bgColor);
+    --isc-listGrid_headerButton_disabled_color: var(--isc-button_disabled_color);
+    --isc-listGrid_headerButton_disabled_bgColor: var(--isc-button_disabled_bgColor);
+    --isc-listGrid_headerButton_print_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-standard_border_color);
+    --isc-listGrid_headerSpan_over_bgColor: var(--isc-listGrid_headerButton_over_bgColor);
+    --isc-listGrid_headerSpan_border_color: #ffffff;
+    --isc-listGrid_headerSpan_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-listGrid_headerSpan_border_color);
+    --isc-listGrid_cell_paddingLeft: 3px;
+    --isc-listGrid_cell_border: none;
+    --isc-listGrid_row_border: none;
+    --isc-listGrid_cell_color: #3f3f3f;
+    --isc-listGrid_cell_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-listGrid_cell_dark_bgColor: #fafafa;
+    --isc-listGrid_cell_altCol_bgColor: #fafafa;
+    --isc-listGrid_cell_altCol_dark_bgColor: whitesmoke;
+    --isc-listGrid_cell_over_color: var(--isc-listGrid_cell_color);
+    --isc-listGrid_cell_over_bgColor: var(--isc-active_over_bgColor);
+    --isc-listGrid_cell_selected_color: white;
+    --isc-listGrid_cell_selected_bgColor: var(--isc-active_selected_bgColor);
+    --isc-listGrid_cell_selected_over_color: var(--isc-listGrid_cell_selected_color);
+    --isc-listGrid_cell_selected_over_bgColor: var(--isc-active_selected_bgColor);
+    --isc-listGrid_cell_selected_over_border_color: var(--isc-active_selected_bgColor);
+    --isc-listGrid_cell_selected_over_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-listGrid_cell_selected_over_border_color);
+    --isc-listGrid_cell_selected_over_glow_color: var(--isc-active_selected_bgColor);
+    --isc-listGrid_cell_selected_over_glow: 0 0 5px 0 var(--isc-listGrid_cell_selected_over_glow_color);
+    --isc-listGrid_cell_disabled_color: #b8b8b8;
+    --isc-listGrid_cell_disabled_bgColor: #ededed;
+    --isc-listGrid_summaryCell_color: #005491;
+    --isc-listGrid_summaryCell_bgColor: #e7f6ff;
+    --isc-listGrid_summaryCell_border_color: #005491;
+    --isc-listGrid_summaryCell_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-listGrid_summaryCell_border_color);
+    --isc-listGrid_summaryCell_disabled_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-listGrid_cell_disabled_bgColor);
+    --isc-listGrid_summaryCell_dark_color: #585858;
+    --isc-listGrid_summaryCell_disabled_bgColor: var(--isc-listGrid_summaryCell_bgColor);
+    --isc-listGrid_groupNode_font: var(--isc-listGrid_cell_font);
+    --isc-listGrid_groupNode_font_size: 12.5px;
+    --isc-listGrid_groupNode_fontWeight: bold;
+    --isc-listGrid_groupNode_padding: 1px 1px 1px var(--isc-listGrid_cell_paddingLeft);
+    --isc-listGrid_groupNode_text_color: #005491;
+    --isc-listGrid_groupNode_bgColor: var(--isc-listGrid_cell_bgColor);
+    --isc-listGrid_groupNode_border_color: #8c8c8c;
+    --isc-listGrid_groupNode_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-listGrid_groupNode_border_color);
+    --isc-listGrid_editor_shadow: none;
+    --isc-listGrid_editor_focused_shadow: inset 0 0 5px 0 var(--isc-formItem_focused_border_color);
+    --isc-listGrid_editor_focused_over_shadow: 0 0 5px var(--isc-formItem_focused_border_color);
+    --isc-listGrid_filterOperatorIcon_font: var(--isc-button_font);
+    --isc-listGrid_filterOperatorIcon_fontSize: var(--isc-standard_small_font_size);
+    --isc-listGrid_filterOperatorIcon_fontWeight: normal;
+    --isc-listGrid_filterOperatorIcon_line_height: 14px;
+    --isc-listGrid_filterOperatorIcon_textAlign: center;
+    --isc-listGrid_filterOperatorIcon_padding: 0px;
+    --isc-listGrid_filterOperatorIcon_margin: 0px;
+    --isc-listGrid_filterOperatorIcon_border_radius: 5px;
+    --isc-treeGrid_glow_color: var(--isc-listGrid_glow_color);
+    --isc-treeGrid_cell_font: var(--isc-listGrid_cell_font);
+    --isc-treeGrid_cell_font_size: var(--isc-listGrid_cell_font_size);
+    --isc-treeGrid_cell_color: var(--isc-listGrid_cell_color);
+    --isc-treeGrid_cell_over_color: var(--isc-listGrid_cell_over_color);
+    --isc-treeGrid_cell_bgColor: var(--isc-listGrid_cell_bgColor);
+    --isc-treeGrid_cell_border_color: var(--isc-standard_widget_border_color);
+    --isc-treeGrid_cell_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-treeGrid_cell_border_color);
+    --isc-treeGrid_cell_dark_bgColor: var(--isc-listGrid_cell_dark_bgColor);
+    --isc-treeGrid_cell_over_bgColor: var(--isc-listGrid_cell_over_bgColor);
+    --isc-treeGrid_cell_selected_color: var(--isc-listGrid_cell_selected_color);
+    --isc-treeGrid_cell_selected_bgColor: var(--isc-listGrid_cell_selected_bgColor);
+    --isc-treeGrid_cell_selected_over_color: var(--isc-listGrid_cell_selected_over_color);
+    --isc-treeGrid_cell_selected_over_bgColor: var(--isc-listGrid_cell_selected_bgColor);
+    --isc-treeGrid_cell_selected_over_glow_color: var(--isc-listGrid_cell_selected_over_glow_color);
+    --isc-treeGrid_cell_selected_over_glow: 0 0 5px 0 var(--isc-treeGrid_cell_selected_over_glow_color);
+    --isc-treeGrid_cell_disabled_color: var(--isc-listGrid_cell_disabled_color);
+    --isc-treeGrid_cell_disabled_bgColor: var(--isc-listGrid_cell_disabled_bgColor);
+    --isc-cubeGrid_font: var(--isc-standard_body_font);
+    --isc-cubeGrid_glow_color: var(--isc-listGrid_glow_color);
+    --isc-cubeGrid_font_size: var(--isc-normal_font_size);
+    --isc-cubeGrid_border_color: var(--isc-listGrid_border_color);
+    --isc-cubeGrid_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-cubeGrid_border_color);
+    --isc-cubeGrid_header_font: var(--isc-listGrid_headerButton_font);
+    --isc-cubeGrid_header_color: var(--isc-listGrid_headerButton_color);
+    --isc-cubeGrid_header_bgColor: var(--isc-listGrid_headerButton_bgColor);
+    --isc-cubeGrid_header_border_color: var(--isc-listGrid_headerSpan_border_color);
+    --isc-cubeGrid_header_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-cubeGrid_header_border_color);
+    --isc-cubeGrid_header_over_bgColor: var(--isc-listGrid_headerButton_over_bgColor);
+    --isc-cubeGrid_header_disabled_color: var(--isc-listGrid_headerButton_disabled_color);
+    --isc-cubeGrid_header_disabled_bgColor: var(--isc-listGrid_headerButton_disabled_bgColor);
+    --isc-cubeGrid_header_selected_bgColor: var(--isc-listGrid_headerButton_selected_bgColor);
+    --isc-cubeGrid_header_selected_over_color: var(--isc-active_text_color);
+    --isc-cubeGrid_header_selected_over_bgColor: var(--isc-listGrid_headerButton_selected_over_bgColor);
+    --isc-cubeGrid_header_selected_down_bgColor: #0b62a2;
+    --isc-cubeGrid_header_selected_disabled_bgColor: var(--isc-listGrid_headerButton_disabled_bgColor);
+    --isc-cubeGrid_headerLabel_color: var(--isc-cubeGrid_header_color);
+    --isc-cubeGrid_headerLabel_bgColor: var(--isc-cubeGrid_header_selected_bgColor);
+    --isc-cubeGrid_headerLabel_selected_bgColor: #0664a8;
+    --isc-cubeGrid_innerHeader_font_size: 12px;
+    --isc-cubeGrid_innerHeader_color: #3f3f3f;
+    --isc-cubeGrid_innerHeader_border_color: var(--isc-standard_widget_border_color);
+    --isc-cubeGrid_innerHeader_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-cubeGrid_innerHeader_border_color);
+    --isc-cubeGrid_innerHeader_bgColor: #e6e6e6;
+    --isc-cubeGrid_headerLabel_font_size: 13px;
+    --isc-cubeGrid_cell_color: var(--isc-listGrid_cell_color);
+    --isc-cubeGrid_cell_bgColor: var(--isc-listGrid_cell_bgColor);
+    --isc-cubeGrid_cell_border_color: var(--isc-standard_widget_border_color);
+    --isc-cubeGrid_cell_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-cubeGrid_cell_border_color);
+    --isc-cubeGrid_cell_dark_bgColor: var(--isc-listGrid_cell_dark_bgColor);
+    --isc-cubeGrid_cell_over_color: var(--isc-listGrid_cell_over_color);
+    --isc-cubeGrid_cell_over_bgColor: var(--isc-listGrid_cell_over_bgColor);
+    --isc-cubeGrid_cell_selected_color: var(--isc-listGrid_cell_selected_color);
+    --isc-cubeGrid_cell_selected_bgColor: var(--isc-active_selected_bgColor);
+    --isc-cubeGrid_cell_selected_over_color: var(--isc-listGrid_cell_selected_over_color);
+    --isc-cubeGrid_cell_selected_over_bgColor: var(--isc-listGrid_cell_selected_over_bgColor);
+    --isc-cubeGrid_cell_selected_over_glow_color: var(--isc-listGrid_cell_selected_over_glow_color);
+    --isc-cubeGrid_cell_selected_over_glow: 0 0 5px 0 var(--isc-cubeGrid_cell_selected_over_glow_color);
+    --isc-cubeGrid_cell_disabled_color: var(--isc-listGrid_cell_disabled_color);
+    --isc-filterBuilder_bracketBorder_color: var(--isc-standard_widget_border_color);
+    --isc-filterBuilder_bracketBorder_width: var(--isc-standard_border_width);
+    --isc-filterBuilder_bracketBorder: var(--isc-filterBuilder_bracketBorder_width) var(--isc-standard_border_style) var(--isc-filterBuilder_bracketBorder_color);
+    --isc-pickList_menu_bgColor: var(--isc-listGrid_body_bgColor);
+    --isc-pickList_menu_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-standard_widget_border_color);
+    --isc-pickList_menu_shadow: none;
+    --isc-pickList_menu_body_border: var(--isc-pickList_menu_border);
+    --isc-pickList_cell_paddingBottom: 2px;
+    --isc-pickList_cell_color: var(--isc-listGrid_cell_color);
+    --isc-pickList_cell_bgColor: var(--isc-listGrid_cell_bgColor);
+    --isc-pickList_cell_border: none;
+    --isc-pickList_cell_over_color: var(--isc-listGrid_cell_selected_color);
+    --isc-pickList_cell_over_bgColor: var(--isc-listGrid_cell_selected_bgColor);
+    --isc-pickList_cell_over_border_color: var(--isc-listGrid_border_color);
+    --isc-pickList_cell_over_border: var(--isc-standard_border_width) dotted var(--isc-pickList_cell_over_border_color);
+    --isc-pickList_cell_selected_over_color: var(--isc-listGrid_cell_selected_color);
+    --isc-pickList_selected_over_bgColor: var(--isc-listGrid_cell_selected_bgColor);
+    --isc-pickList_cell_disabled_color: var(--isc-listGrid_cell_disabled_color);
+    --isc-pickList_cell_deselected_color: #a8a8a8;
+    --isc-tileGrid_border_color: var(--isc-standard_border_color);
+    --isc-tileGrid_border_width: var(--isc-standard_border_width);
+    --isc-tileGrid_border: var(--isc-tileGrid_border_width) var(--isc-standard_border_style) var(--isc-tileGrid_border_color);
+    --isc-tileGrid_simpleTile_font_size: var(--isc-standard_small_font_size);
+    --isc-tileGrid_simpleTile_padding: 3px;
+    --isc-tileGrid_simpleTile_color: var(--isc-standard_color);
+    --isc-tileGrid_simpleTile_border: none;
+    --isc-tileGrid_simpleTile_over_bgColor: var(--isc-secondary_bgColor);
+    --isc-tileGrid_simpleTile_over_border_color: var(--isc-standard_border_color);
+    --isc-tileGrid_simpleTile_over_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-tileGrid_simpleTile_over_border_color);
+    --isc-tileGrid_simpleTile_selected_bgColor: var(--isc-secondary_bgColor);
+    --isc-tileGrid_simpleTile_selected_bgImage: var(--isc-tileGrid_simpleTile_over_bgImage);
+    --isc-tileGrid_simpleTile_selected_border_color: var(--isc-standard_border_color);
+    --isc-tileGrid_simpleTile_selected_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-tileGrid_simpleTile_selected_border_color);
+    --isc-splitbar_bgColor: #e6e6e6;
+    --isc-splitbar_border_color: #757575;
+    --isc-splitbar_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-splitbar_border_color);
+    --isc-progressbar_bgColor: #cccccc;
+    --isc-progressbar_disabled_bgColor: var(--isc-progressbar_bgColor);
+    --isc-progressbar_border_color: var(--isc-standard_widget_border_color);
+    --isc-progressbar_border_width: var(--isc-standard_border_width);
+    --isc-progressbar_border_style: var(--isc-standard_border_style);
+    --isc-progressbar_border: var(--isc-progressbar_border_width) var(--isc-progressbar_border_style) var(--isc-progressbar_border_color);
+    --isc-progressbar_border_radius: 0px 0px 0px 0px;
+    --isc-progressbarProgress_bgColor: var(--isc-active_bgColor);
+    --isc-progressbarProgress_disabled_bgColor: var(--isc-active_disabled_bgColor);
+    --isc-progressbarProgress_border_radius: 0px 0px 0px 0px;
+    --isc-progressbarTitle_font: var(--isc-formItem_font);
+    --isc-progressbarTitle_font_size: var(--isc-formItem_font_size);
+    --isc-progressbarTitle_padding: 4px 4px 4px 4px;
+    --isc-progressbarTitle_color: var(--isc-active_text_color);
+    --isc-rich_text_border_color: var(--isc-standard_widget_border_color);
+    --isc-rich_text_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-rich_text_border_color);
+    --isc-toolStrip_padding: 4px 4px 4px 6px;
+    --isc-toolStrip_border_color: var(--isc-standard_widget_border_color);
+    --isc-toolStrip_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-toolStrip_border_color);
+    --isc-toolStrip_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-toolStrip_v_padding: 4px;
+    --isc-toolStripGroup_font: var(--isc-standard_body_font);
+    --isc-toolStripGroup_font_size: 15.5px;
+    --isc-toolStripGroup_fontWeight: 500;
+    --isc-toolStripGroup_padding: 0px;
+    --isc-toolStripGroup_title_padding: 8px 10px 8px 10px;
+    --isc-toolStripGroup_color: var(--isc-secondary_header_color);
+    --isc-toolStripGroup_bgColor: var(--isc-toolStrip_bgColor);
+    --isc-toolStripGroup_border_color: var(--isc-standard_widget_border_color);
+    --isc-toolStripGroup_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-toolStripGroup_border_color);
+    --isc-toolStripButton_font: var(--isc-primary_font);
+    --isc-toolStripButton_padding: 3px 4px 3px 4px;
+    --isc-toolStripButton_color: var(--isc-standard_color);
+    --isc-toolStripButton_border_color: transparent;
+    --isc-toolStripButton_border_width: var(--isc-standard_border_width);
+    --isc-toolStripButton_border_radius: var(--isc-standard_border_radius);
+    --isc-toolStripButton_border: var(--isc-toolStripButton_border_width) var(--isc-standard_border_style) var(--isc-toolStripButton_border_color);
+    --isc-toolStripButton_over_border_color: #9e9e9e;
+    --isc-toolStripButton_over_border: var(--isc-toolStripButton_border_width) var(--isc-standard_border_style) var(--isc-toolStripButton_over_border_color);
+    --isc-toolStripButton_over_bgColor: transparent;
+    --isc-toolStripButton_over_color: var(--isc-toolStripButton_color);
+    --isc-toolStripButton_selected_bgColor: #616161;
+    --isc-toolStripButton_selected_color: var(--isc-toolStrip_bgColor);
+    --isc-toolStripButton_selected_border_color: #9e9e9e;
+    --isc-toolStripButton_selected_border: var(--isc-toolStripButton_border_width) var(--isc-standard_border_style) var(--isc-toolStripButton_selected_border_color);
+    --isc-toolStripButton_disabled_bgColor: #e8e8e8;
+    --isc-toolStripButton_disabled_color: var(--isc-button_disabled_color);
+    --isc-ribbonBar_padding: 10px;
+    --isc-ribbonBar_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-ribbonBar_border_color: var(--isc-standard_widget_border_color);
+    --isc-ribbonBar_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-ribbonBar_border_color);
+    --isc-ribbonBar_shadow: #fafcff 0 1px 0 inset;
+    --isc-ribbonGroup_padding: 0px;
+    --isc-ribbonGroup_bgColor: var(--isc-ribbonBar_bgColor);
+    --isc-ribbonGroup_border: var(--isc-ribbonBar_border);
+    --isc-ribbonGroup_shadow: 3px 3px 5px 2px #f3f3f3;
+    --isc-iconButton_font: var(--isc-standard_body_font);
+    --isc-iconButton_font_size: 13.5px;
+    --isc-iconButton_padding: 3px;
+    --isc-iconButton_color: #4d4d4d;
+    --isc-iconButton_bgColor: transparent;
+    --isc-iconButton_border_color: transparent;
+    --isc-iconButton_border_width: var(--isc-standard_border_width);
+    --isc-iconButton_border: var(--isc-iconButton_border_width) var(--isc-standard_border_style) var(--isc-iconButton_border_color);
+    --isc-iconButton_border_radius: 3px;
+    --isc-iconButton_over_bgColor: var(--isc-secondary_bgColor);
+    --isc-iconButton_over_border_color: var(--isc-standard_widget_border_color);
+    --isc-iconButton_over_border: var(--isc-iconButton_border_width) var(--isc-standard_border_style) var(--isc-iconButton_over_border_color);
+    --isc-iconButton_selected_border_color: #2692e1;
+    --isc-iconButton_selected_border: var(--isc-iconButton_border_width) var(--isc-standard_border_style) var(--isc-iconButton_selected_border_color);
+    --isc-iconButton_menu_icon_border_radius: var(--isc-iconButton_border_radius);
+    --isc-scrollTrack_bgColor: #ededed;
+    --isc-scrollTrack_down_bgColor: #cccccc;
+    --isc-scrollTrack_over_bgColor: #dadada;
+    --isc-scrollbar_default_border: none;
+    --isc-scrollbar_horizontal_sprite_image: url(../assets/images/Scrollbar/hscroll_sprite.png);
+    --isc-scrollbar_vertical_sprite_image: url(../assets/images/Scrollbar/vscroll_sprite.png);
+    --isc-scrollbar_vertical_start_over_xpos: -32px;
+    --isc-scrollbar_vertical_start_down_xpos: -48px;
+    --isc-scrollbar_vertical_end_over_xpos: -32px;
+    --isc-scrollbar_vertical_end_down_xpos: -48px;
+    --isc-scrollbar_horizontal_start_over_ypos: -32px;
+    --isc-scrollbar_horizontal_start_down_ypos: -48px;
+    --isc-scrollbar_horizontal_end_over_ypos: -32px;
+    --isc-scrollbar_horizontal_end_down_ypos: -48px;
+    --isc-detailViewer_font: var(--isc-standard_body_font);
+    --isc-detailViewer_color: var(--isc-formItem_color);
+    --isc-detailViewer_font_size: var(--isc-standard_font_size);
+    --isc-detailViewer_bgColor: #eff9ff;
+    --isc-detailViewer_border_color: var(--isc-standard_widget_border_color);
+    --isc-detailViewer_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-detailViewer_border_color);
+    --isc-detailViewer_header_color: var(--isc-detailViewer_color);
+    --isc-detailViewer_header_bgColor: #bdddff;
+    --isc-detailViewer_label_fontWeight: bold;
+    --isc-detailViewer_label_textAlign: right;
+    --isc-detailViewer_label_bgColor: var(--isc-secondary_bgColor);
+    --isc-slider_padding: 1px 0px 1px 0px;
+    --isc-slider_title_color: #4d4d4d;
+    --isc-slider_value_padding: 2px;
+    --isc-slider_value_line_height: 14px;
+    --isc-slider_value_color: #333b41;
+    --isc-slider_value_bgColor: var(--isc-formItem_bgColor);
+    --isc-slider_value_border_color: var(--isc-formItem_border_color);
+    --isc-slider_value_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-slider_value_border_color);
+    --isc-slider_value_border_radius: 3px;
+    --isc-slider_value_disabled_color: #9e9e9e;
+    --isc-slider_value_disabled_bgColor: #e6e6e6;
+    --isc-slider_value_disabled_border_color: var(--isc-slider_value_border_color);
+    --isc-slider_value_disabled_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-slider_value_disabled_border_color);
+    --isc-slider_value_arrow_hidden_border_color: var(--isc-formItem_bgColor);
+    --isc-slider_range_fontWeight: 400;
+    --isc-slider_range_color: var(--isc-formItem_color);
+    --isc-slider_range_disabled_color: var(--isc-formItem_disabled_color);
+    --isc-slider_thumb_bgColor: var(--isc-active_bgColor);
+    --isc-slider_thumb_outline: none;
+    --isc-slider_thumb_border_radius: 15px;
+    --isc-slider_thumb_disabled_bgColor: #9e9e9e;
+    --isc-slider_thumb_disabled_outline: none;
+    --isc-slider_track_border_radius: 10px;
+    --isc-slider_track_bgColor: #e6e6e6;
+    --isc-slider_track_disabled_bgColor: var(--isc-slider_track_bgColor);
+    --isc-slider_activeTrack_disabled_bgColor: var(--isc-active_disabled_bgColor);
+    --isc-slider_activeTrack_bgColor: var(--isc-active_over_bgColor);
+    --isc-dateChooser_font: var(--isc-primary_font);
+    --isc-dateChooser_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-dateChooser_border_color: var(--isc-standard_widget_border_color);
+    --isc-dateChooser_shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.05);
+    --isc-dateChooser_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-dateChooser_border_color);
+    --isc-dateChooser_nav_border_radius: 3px;
+    --isc-dateChooser_nav_sprite_image: none;
+    --isc-dateChooser_navButton_padding: 2px;
+    --isc-dateChooser_navButton_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-dateChooser_navButton_color: var(--isc-secondary_header_color);
+    --isc-dateChooser_navButton_over_color: #157fcc;
+    --isc-dateChooser_header_text_color: var(--isc-standard_header_bgColor);
+    --isc-dateChooser_header_bgColor: #ffffff;
+    --isc-dateChooser_cell_color: var(--isc-listGrid_cell_color);
+    --isc-dateChooser_cell_bgColor: var(--isc-listGrid_cell_bgColor);
+    --isc-dateChooser_cell_border_radius: 3px;
+    --isc-dateChooser_cell_border_width: 2px;
+    --isc-dateChooser_cell_border: var(--isc-dateChooser_cell_border_width) var(--isc-standard_border_style) var(--isc-dateChooser_cell_bgColor);
+    --isc-dateChooser_cell_over_color: var(--isc-standard_header_color);
+    --isc-dateChooser_cell_over_bgColor: var(--isc-active_bgColor);
+    --isc-dateChooser_cell_over_border: var(--isc-dateChooser_cell_border_width) var(--isc-standard_border_style) var(--isc-dateChooser_cell_over_bgColor);
+    --isc-dateChooser_cell_disabled_color: var(--isc-default_border_dark_color);
+    --isc-dateChooser_cell_selected_bgColor: var(--isc-standard_header_bgColor);
+    --isc-dateChooser_cell_selected_color: var(--isc-standard_header_color);
+    --isc-dateChooser_cell_selected_border: var(--isc-dateChooser_cell_border_width) var(--isc-standard_border_style) var(--isc-dateChooser_cell_selected_bgColor);
+    --isc-dateChooser_weekend_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-dateChooser_weekend_border: var(--isc-dateChooser_cell_border_width) var(--isc-standard_border_style) var(--isc-dateChooser_weekend_bgColor);
+    --isc-colorPicker_padding: 0px;
+    --isc-colorPicker_margin: 0px;
+    --isc-colorPicker_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-colorPicker_border_color: var(--isc-standard_widget_border_color);
+    --isc-colorPicker_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-colorPicker_border_color);
+    --isc-colorPicker_shadow: var(--isc-window_shadow);
+    --isc-colorPicker_innerContent_padding: 0px 0px 5px 0px;
+    --isc-colorPicker_buttonLayout_padding: 8px;
+    --isc-colorPicker_header_font: var(--isc-window_header_font);
+    --isc-colorPicker_header_font_size: var(--isc-window_header_font_size);
+    --isc-colorPicker_header_padding: 0px 0px 0px 10px;
+    --isc-colorPicker_header_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-colorPicker_header_color: var(--isc-navBar_header_color);
+    --isc-colorPicker_headerText_padding: 4px 8px 4px 8px;
+    --isc-colorPicker_cell_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-colorPicker_cell_border_color: var(--isc-standard_border_color);
+    --isc-colorPicker_cell_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-colorPicker_cell_border_color);
+    --isc-colorPicker_cell_over_border_color: #000000;
+    --isc-colorPicker_cell_over_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-colorPicker_cell_over_border_color);
+    --isc-calendar_font_size: var(--isc-standard_font_size);
+    --isc-calendar_dragCanvas_border: var(--isc-standard_border_width) dashed red;
+    --isc-calendar_bgColor: var(--isc-listGrid_body_bgColor);
+    --isc-calendar_border_color: var(--isc-standard_border_color);
+    --isc-calendar_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-calendar_border_color);
+    --isc-calendar_text_color: var(--isc-standard_color);
+    --isc-calendar_dark_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-calendar_month_otherDay_header_selected_bgColor: #c0d8ec;
+    --isc-calendar_disabled_over_bgColor: #a4bbdb;
+    --isc-calendar_disabled_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-calendar_label_column_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-calendar_other_day_color: #454545;
+    --isc-calendar_day_header_font_color: var(--isc-calendar_other_day_color);
+    --isc-calendar_eventWindow_font: var(--isc-primary_font);
+    --isc-calendar_eventWindow_font_size: var(--isc-standard_font_size);
+    --isc-calendar_eventWindow_padding: 1px;
+    --isc-calendar_eventWindow_color: var(--isc-standard_color);
+    --isc-calendar_eventWindow_bgColor: #f0fbff;
+    --isc-calendar_eventWindow_border_color: #99ccff;
+    --isc-calendar_eventWindow_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-calendar_eventWindow_border_color);
+    --isc-calendar_eventWindow_selected_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-standard_header_bgColor);
+    --isc-calendar_eventWindow_body_border: none;
+    --isc-calendar_eventWindow_body_padding: 2px 2px 2px 2px;
+    --isc-calendar_eventWindow_header_padding: 2px 2px 2px 2px;
+    --isc-calendar_eventWindow_header_color: #4d4d4d;
+    --isc-calendar_eventWindow_header_bgColor: #d0e6f6;
+    --isc-calendar_eventWindow_header_border_color: #d0e6f6;
+    --isc-calendar_eventWindow_header_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-calendar_eventWindow_header_border_color);
+    --isc-calendar_eventWindow_resizer_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-calendar_bgColor);
+    --isc-calendar_columnLayout_bgColor: var(--isc-calendar_bgColor);
+    --isc-calendar_columnLayout_right_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-calendar_border_color);
+    --isc-calendar_columnLayout_opacity: 1;
+    --isc-calendar_indicatorCanvas_bgColor: #AA0000;
+    --isc-calendar_indicatorCanvas_color: var(--isc-active_text_color);
+    --isc-calendar_zoneCanvas_color: var(--isc-active_text_color);
+    --isc-calendar_zoneCanvas_bgColor: #9e9e9e;
+    --isc-calendar_zoneCanvas_opacity: 0.5;
+    --isc-calendar_gripper_border_radius: 5px;
+    --isc-calendar_label_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-standard_widget_border_color);
+    --isc-chart_font_size: var(--isc-normal_font_size);
+    --isc-chart_fontWeight: bold;
+    --isc-chart_value_font_size: var(--isc-standard_font_size);
+    --isc-scChart_border_color: var(--isc-listGrid_border_color);
+    --isc-scChart_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-scChart_border_color);
+    --isc-chartBar1_bgColor: #FF0000;
+    --isc-chartBar2_bgColor: #0000FF;
+    --isc-chartBar3_bgColor: #00FF00;
+    --isc-chartBar1_gradient_color: #990000;
+    --isc-chart_axis_title_color: blue;
+    --isc-hoverCanvas_padding: 5px;
+    --isc-hoverCanvas_font: var(--isc-standard_hover_font);
+    --isc-hoverCanvas_font_size: var(--isc-standard_font_size);
+    --isc-hoverCanvas_color: #363636;
+    --isc-hoverCanvas_bgColor: #eff9ff;
+    --isc-hoverCanvas_border_color: var(--isc-standard_header_bgColor);
+    --isc-hoverCanvas_border_style: var(--isc-standard_border_style);
+    --isc-hoverCanvas_border_width: var(--isc-standard_border_width);
+    --isc-hoverCanvas_border: var(--isc-hoverCanvas_border_width) var(--isc-hoverCanvas_border_style) var(--isc-hoverCanvas_border_color);
+    --isc-hoverCanvas_border_radius: 0px;
+    --isc-hoverCanvas_large_font: var(--isc-tertiary_font);
+    --isc-hoverCanvas_large_font_size: var(--isc-standard_header_font_size);
+    --isc-hoverCanvas_large_padding: 10px;
+    --isc-hoverCanvas_large_bgColor: #3a4a53;
+    --isc-hoverCanvas_large_color: var(--isc-active_text_color);
+    --isc-hoverCanvas_large_border_radius: 8px;
+    --isc-hoverCanvas_large_shadow: 0 0 5px var(--isc-hoverCanvas_large_bgColor);
+    --isc-notify_font: var(--isc-standard_body_font);
+    --isc-notify_font_size: var(--isc-standard_header_font_size);
+    --isc-notify_padding: 10px 45px 10px 10px;
+    --isc-notify_rtl_padding: 10px 10px 10px 45px;
+    --isc-notify_color: var(--isc-active_text_color);
+    --isc-notify_action_color: #3498db;
+    --isc-notify_message_bgColor: #394a51;
+    --isc-notify_message_shadow: 0px 0px 5px var(--isc-notify_message_bgColor);
+    --isc-notify_error_bgColor: #e34e42;
+    --isc-notify_error_link_color: #F39C12;
+    --isc-notify_error_shadow: 0px 0px 5px var(--isc-notify_error_bgColor);
+    --isc-notify_warn_link_color: #4F140E;
+    --isc-notify_warn_bgColor: #ea9039;
+    --isc-notify_warn_shadow: 0px 0px 5px var(--isc-notify_warn_bgColor);
+    --isc-loginForm_padding: 15px;
+    --isc-loginForm_title_font: Arial, sans-serif;
+    --isc-loginForm_title_bottom_padding: 6px;
+    --isc-loginForm_error_color: #ff0000;
+    --isc-loginForm_item_border: var(--isc-formItem_border_width) var(--isc-standard_border_style) #d8dde5;
+    --isc-loginForm_item_border_radius: 4px;
+    --isc-loginForm_button_font: system-ui;
+    --isc-loginForm_button_color: var(--isc-button_color);
+    --isc-loginForm_button_bgColor: #3a66c7;
+    --isc-loginForm_button_over_bgColor: #232852;
+    --isc-loginForm_button_border: none;
+    --isc-loginForm_button_border_radius: 4px;
+    --isc-processElement_font: var(--isc-primary_font);
+    --isc-processElement_font_size: var(--isc-normal_font_size);
+    --isc-processElement_color: var(--isc-standard_color);
+    --isc-processElement_border_color: #808080;
+    --isc-processElement_border_radius: 2px;
+    --isc-processElement_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-processElement_border_color);
+    --isc-processElementNew_border_color: blue;
+    --isc-processElementNew_border_radius: 2px;
+    --isc-processElementNew_border: var(--isc-standard_border_width) dashed var(--isc-processElementNew_border_color);
+    --isc-processElementHeader_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-processElementHeader_border_color: #dddddd;
+    --isc-processElementHeader_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-processElementHeader_border_color);
+    --isc-processElementHeaderLabel_font: var(--isc-standard_header_font);
+    --isc-processElementHeaderLabel_font_size: var(--isc-secondary_header_font_size);
+    --isc-processElementHeaderLabel_fontWeight: var(--isc-standard_header_font_weight);
+    --isc-processElementHeaderLabel_color: var(--isc-secondary_header_color);
+    --isc-processElementHeaderLabel_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-pageTitle_font: var(--isc-primary_font);
+    --isc-pageTitle_font_size: 18px;
+    --isc-pageTitle_color: var(--isc-formItem_color);
+    --isc-pageTitle_bgColor: transparent;
+    --isc-pageTitle_border_color: transparent;
+    --isc-pageTitle_border_width: var(--isc-standard_border_width);
+    --isc-pageTitle_border: var(--isc-pageTitle_border_width) var(--isc-standard_border_style) var(--isc-pageTitle_border_color);
+    --isc-pageTitle_disabled_color: var(--isc-default_disabled_text_color);
+    --isc-resize_thumb_bgColor: #c9f4f8;
+    --isc-resize_thumb_border_color: gray;
+    --isc-resize_thumb_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-resize_thumb_border_color);
+    --isc-resize_thumb_gradient_color: #ffffff;
+    --isc-corner_resize_thumb_border_radius: 5px;
+    --isc-groupLabel_font: var(--isc-primary_font);
+    --isc-groupLabel_font_size: var(--isc-standard_font_size);
+    --isc-groupLabel_padding: 5px;
+    --isc-groupLabel_color: var(--isc-standard_color);
+    --isc-groupLabel_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-groupLabel_border_color: var(--isc-standard_border_color);
+    --isc-groupLabel_border: none;
+    --isc-propsheet_font: var(--isc-primary_font);
+    --isc-propsheet_font_size: var(--isc-standard_font_size);
+    --isc-propsheet_bgColor: var(--isc-standard_widget_bgColor);
+    --isc-propsheet_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-standard_border_color);
+    --isc-propsheet_title_bgColor: var(--isc-standard_border_color);
+    --isc-propsheet_field_marginTop: 3px;
+    --isc-propsheet_field_padding: 4px 0px 4px 0px;
+    --isc-propsheet_header_padding: 4px;
+    --isc-propsheet_header_color: var(--isc-standard_color);
+    --isc-propsheet_header_bgColor: var(--isc-listGrid_border_color);
+    --isc-propsheet_error_color: var(--isc-formItem_error_color);
+    --isc-propsheet_error_bgColor: #cfd9f2;
+    --isc-propsheet_select_h_padding: 3px;
+    --isc-layout_dropLine_bgColor: var(--isc-active_bgColor);
+    --isc-layout_dropLine_border: none;
+    --isc-layout_placeholder_border: var(--isc-standard_border_width) var(--isc-standard_border_style) var(--isc-standard_widget_border_color);
+    --isc-dragOutline_border_color: var(--isc-active_border_color);
+    --isc-dragOutline_border_width: 2px;
+    --isc-dragOutline_border: var(--isc-dragOutline_border_width) dashed var(--isc-dragOutline_border_color);
+    --isc-formulaBuilder_sampleOutput_padding: 3px;
+    --isc-formulaBuilder_sampleOutput_border_color: var(--isc-standard_widget_border_color);
+    --isc-formulaBuilder_sampleOutput_border: 2px var(--isc-standard_border_style) var(--isc-standard_widget_border_color);
+    --isc-formulaBuilder_sampleOutput_border_width: var(--isc-standard_border_width);
+    --isc-paletteCell_font: var(--isc-primary_font);
+    --isc-paletteCell_font_size: var(--isc-standard_header_font_size);
+    --isc-paletteCell_color: var(--isc-secondary_header_color);
+    --isc-paletteCell_bgColor: var(--isc-secondary_header_bgColor);
+    --isc-link_color: #0000EE;
+    --isc-link_visited_color: #551A8B;
+    --isc-link_active_color: #EE0000;
+    --isc-link_over_color: var(--isc-link_color);
+    --isc-modalMask_bgColor: #000000;
+    --isc-dropBorder_bgColor: #808080;
+    --isc-transparent_background_from_rgba: rgba(255, 255, 255, 0);
+    --isc-transparent_background_for_ie: \9 transparent;
+    --isc-showcase_EButton_bgColor: #47a7e3;
+    --isc-docMethod_color: blue;
+    --isc-docAttribute_color: green;
+    --isc-docParameter_color: black;
+    --isc-docOptionalParameter_color: gray;
+}
+
+hr {
+    border: none;
+    border-top: var(--isc-standard_border);
+    margin: 0px;
+}
+
+ol,
+ul {
+    -webkit-text-size-adjust: 100%;
+}
+
+.pageBackground {
+    background-color: var(--isc-standard_bgColor);
+    color: var(--isc-standard_color);
+    font-family: var(--isc-primary_font);
+    font-size: var(--isc-standard_font_size);
+}
+
+
+/* default text */
+
+.normal,
+.normalFocused,
+.normalDisabled {
+    background-color: transparent;
+    color: var(--isc-standard_color);
+    font-family: var(--isc-primary_font);
+    font-size: var(--isc-normal_font_size);
+}
+
+.normalDisabled {
+    color: var(--isc-default_disabled_text_color);
+}
+
+body {
+    background-color: var(--isc-page_bgColor);
+}
+
+.defaultBorder {
+    border: var(--isc-standard_border);
+}
+
+
+/* drag outline */
+
+.dragOutline {
+    border: var(--isc-dragOutline_border);
+}
+
+
+/* drop indicator */
+
+.dropBorder {
+    background-color: var(--isc-dropBorder_bgColor);
+}
+
+.sectionStack {
+    border: var(--isc-sectionStack_border);
+    border-top: var(--isc-sectionStack_top_border);
+    background-color: var(--isc-sectionStack_bgColor);
+}
+
+.sectionHeaderTitleopened,
+.sectionHeaderTitleclosed {
+    color: var(--isc-sectionHeader_color);
+    font-family: var(--isc-sectionHeader_font);
+    font-size: var(--isc-sectionHeader_font_size);
+}
+
+.sectionHeaderTitleDisabledopened,
+.sectionHeaderTitleDisabledclosed {
+    color: var(--isc-sectionHeader_disabled_text_color);
+    font-family: var(--isc-sectionHeader_font);
+    font-size: var(--isc-sectionHeader_font_size);
+}
+
+.sectionHeaderopened,
+.sectionHeaderclosed,
+.sectionHeaderDisabledopened,
+.sectionHeaderDisabledclosed {
+    background-color: var(--isc-sectionHeader_bgColor);
+    color: var(--isc-sectionHeader_color);
+    padding-left: var(--isc-sectionHeader_paddingLeft);
+    padding-right: var(--isc-sectionHeader_paddingRight);
+    font-family: var(--isc-sectionHeader_font);
+    font-size: var(--isc-sectionHeader_font_size);
+    font-weight: var(--isc-standard_header_font_weight);
+    border-top: var(--isc-sectionHeader_border);
+    border-bottom: var(--isc-sectionHeader_bottom_border);
+    -moz-border-radius: var(--isc-sectionHeader_border_radius);
+    -webkit-border-radius: var(--isc-sectionHeader_border_radius);
+    border-radius: var(--isc-sectionHeader_border_radius);
+    outline: none;
+}
+
+.sectionHeaderDisabledopened,
+.sectionHeaderDisabledclosed {
+    background-color: var(--isc-sectionHeader_disabled_bgColor);
+    color: var(--isc-sectionHeader_disabled_text_color);
+    border-top: var(--isc-sectionHeader_disabled_border);
+    border-bottom: var(--isc-sectionHeader_disabled_border);
+    -moz-border-radius: var(--isc-sectionHeader_border_radius);
+    -webkit-border-radius: var(--isc-sectionHeader_border_radius);
+    border-radius: var(--isc-sectionHeader_border_radius);
+}
+
+
+/* NavigationBar parts */
+
+.navToolbar {
+    background-color: var(--isc-navBar_bgColor);
+    border: var(--isc-navBar_border);
+    -moz-border-radius: var(--isc-standard_border_radius);
+    -webkit-border-radius: var(--isc-standard_border_radius);
+    border-radius: var(--isc-standard_border_radius);
+    outline: none;
+}
+
+.navBarAddedFadeIn {
+    -moz-transition: opacity 225ms 225ms;
+    -o-transition: opacity 225ms 225ms;
+    -webkit-transition: opacity 225ms;
+    transition-delay: 225ms;
+    transition: opacity 225ms 225ms;
+}
+
+.navBarRemovedFadeOut {
+    -moz-transition: opacity 225ms;
+    -o-transition: opacity 225ms;
+    -webkit-transition: opacity 225ms;
+    transition: opacity 225ms;
+}
+
+.navBarFadeIn {
+    -moz-transition: opacity 315ms 135ms;
+    -o-transition: opacity 315ms 135ms;
+    -webkit-transition: opacity 315ms;
+    -webkit-transition-delay: 135ms;
+    transition: opacity 315ms 135ms;
+}
+
+.navBarFadeOut {
+    -moz-transition: opacity 315ms;
+    -o-transition: opacity 315ms;
+    -webkit-transition: opacity 315ms;
+    transition: opacity 315ms;
+}
+
+.navBarOldLeftButtonBack {
+    -moz-transition-property: opacity, -moz-transform;
+    -o-transition-property: opacity, -o-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    -moz-transition-duration: 180ms, 450ms;
+    -o-transition-duration: 180ms, 450ms;
+    -webkit-transition-duration: 180ms, 450ms;
+    transition-duration: 180ms, 450ms;
+}
+
+.navBarNewLeftButtonBack,
+.navBarNewLeftButtonForward {
+    -moz-transition-property: opacity, -moz-transform;
+    -o-transition-property: opacity, -o-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    -moz-transition-duration: 337.5ms, 450ms;
+    -o-transition-duration: 337.5ms, 450ms;
+    -webkit-transition-duration: 337.5ms, 450ms;
+    transition-duration: 337.5ms, 450ms;
+    -moz-transition-delay: 112.5ms, 0ms;
+    -o-transition-delay: 112.5ms, 0ms;
+    -webkit-transition-delay: 112.5ms, 0ms;
+    transition-delay: 112.5ms, 0ms;
+}
+
+.navBarOldLeftButtonForward {
+    -moz-transition-property: opacity, -moz-transform;
+    -o-transition-property: opacity, -o-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    -moz-transition-duration: 315ms, 450ms;
+    -o-transition-duration: 315ms, 450ms;
+    -webkit-transition-duration: 315ms, 450ms;
+    transition-duration: 315ms, 450ms;
+}
+
+.navBarOldTitleBack,
+.navBarOldTitleForward {
+    -moz-transition-property: opacity, -moz-transform;
+    -o-transition-property: opacity, -o-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    -moz-transition-duration: 180ms, 450ms;
+    -o-transition-duration: 180ms, 450ms;
+    -webkit-transition-duration: 180ms, 450ms;
+    transition-duration: 180ms, 450ms;
+}
+
+.navBarNewTitleBack,
+.navBarNewTitleForward {
+    -moz-transition-property: opacity, -moz-transform;
+    -o-transition-property: opacity, -o-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    -moz-transition-duration: 365.625ms, 450ms;
+    -o-transition-duration: 365.625ms, 450ms;
+    -webkit-transition-duration: 365.625ms, 450ms;
+    transition-duration: 365.625ms, 450ms;
+    -moz-transition-delay: 84.375ms, 0ms;
+    -o-transition-delay: 84.375ms, 0ms;
+    -webkit-transition-delay: 84.375ms, 0ms;
+    transition-delay: 84.375ms, 0ms;
+}
+
+.navButton,
+.navButtonOver,
+.navButtonFocused,
+.navButtonFocusedOver,
+.navButtonDown,
+.navButtonFocusedDown,
+.navButtonSelected,
+.navButtonSelectedFocused,
+.navButtonSelectedDown,
+.navButtonSelectedFocusedDown,
+.navButtonSelectedOver,
+.navButtonSelectedFocusedOver,
+.navButtonDisabled,
+.navButtonSelectedDisabled,
+.navBackButton,
+.navBackButtonOver,
+.navBackButtonFocused,
+.navBackButtonFocusedOver,
+.navBackButtonDown,
+.navBackButtonFocusedDown,
+.navBackButtonSelected,
+.navBackButtonSelectedFocused,
+.navBackButtonSelectedDown,
+.navBackButtonSelectedFocusedDown,
+.navBackButtonSelectedOver,
+.navBackButtonSelectedFocusedOver,
+.navBackButtonDisabled,
+.navBackButtonSelectedDisabled,
+.navForwardButton,
+.navForwardButtonOver,
+.navForwardButtonFocused,
+.navForwardButtonFocusedOver,
+.navForwardButtonDown,
+.navForwardButtonFocusedDown,
+.navForwardButtonSelected,
+.navForwardButtonSelectedFocused,
+.navForwardButtonSelectedDown,
+.navForwardButtonSelectedFocusedDown,
+.navForwardButtonSelectedOver,
+.navForwardButtonSelectedFocusedOver,
+.navForwardButtonDisabled,
+.navForwardButtonSelectedDisabled {
+    /* !important to override the cellpadding attribute */
+    padding: var(--isc-navButton_padding) !important;
+    color: var(--isc-navButton_color);
+    -moz-border-radius: var(--isc-navButton_border_radius);
+    -webkit-border-radius: var(--isc-navButton_border_radius);
+    border-radius: var(--isc-navButton_border_radius);
+    font-family: var(--isc-navButton_font);
+    font-size: var(--isc-navButton_font_size);
+    line-height: var(--isc-navButton_line_height);
+    border: var(--isc-navButton_border);
+    background-color: var(--isc-navButton_bgColor);
+}
+
+.navButtonDown,
+.navButtonFocusedDown,
+.navButtonSelectedDown,
+.navButtonSelectedFocusedDown,
+.navBackButtonDown,
+.navBackButtonFocusedDown,
+.navBackButtonSelectedDown,
+.navBackButtonSelectedFocusedDown,
+.navForwardButtonDown,
+.navForwardButtonFocusedDown,
+.navForwardButtonSelectedDown,
+.navForwardButtonSelectedFocusedDown {
+    background-color: var(--isc-navButton_selected_bgColor);
+    border: var(--isc-navButton_selected_border);
+    color: var(--isc-navButton_selected_color);
+}
+
+.navBarHeader {
+    background-color: var(--isc-navBar_bgColor);
+    color: var(--isc-navBar_header_color);
+    font-family: var(--isc-navBar_header_font);
+    font-size: var(--isc-navBar_header_font_size);
+    font-weight: var(--isc-standard_header_font_weight);
+    /* !important to override the cellpadding attribute */
+    padding: 0px;
+}
+
+.navBackButton,
+.navBackButtonOver,
+.navBackButtonFocused,
+.navBackButtonFocusedOver,
+.navBackButtonFocusedDown,
+.navBackButtonSelected,
+.navBackButtonSelectedFocused,
+.navBackButtonSelectedDown,
+.navBackButtonSelectedFocusedDown,
+.navBackButtonSelectedOver,
+.navBackButtonSelectedFocusedOver,
+.navBackButtonDisabled,
+.navBackButtonSelectedDisabled {
+    border: var(--isc-navButton_border);
+    padding: var(--isc-navButton_padding) !important;
+}
+
+.navForwardButton,
+.navForwardButtonOver,
+.navForwardButtonFocused,
+.navForwardButtonFocusedOver,
+.navForwardButtonDown,
+.navForwardButtonFocusedDown,
+.navForwardButtonSelected,
+.navForwardButtonSelectedFocused,
+.navForwardButtonSelectedDown,
+.navForwardButtonSelectedFocusedDown,
+.navForwardButtonSelectedOver,
+.navForwardButtonSelectedFocusedOver,
+.navForwardButtonDisabled,
+.navForwardButtonSelectedDisabled {
+    padding: var(--isc-navButton_forward_padding) !important;
+    border: var(--isc-navButton_border);
+}
+
+.navForwardButtonOver,
+.navBackButtonOver {
+    border: var(--isc-navButton_over_border);
+}
+
+.navItemHeader {
+    color: var(--isc-sectionHeader_color);
+    font-family: var(--isc-sectionHeader_font);
+    font-size: var(--isc-sectionHeader_font_size);
+    background-color: var(--isc-sectionHeader_bgColor);
+    padding-left: var(--isc-sectionHeader_paddingLeft);
+    font-weight: var(--isc-standard_header_font_weight);
+    border-top: var(--isc-standard_border);
+    border-bottom: var(--isc-standard_border);
+    -moz-border-radius: var(--isc-sectionHeader_border_radius);
+    -webkit-border-radius: var(--isc-sectionHeader_border_radius);
+    border-radius: var(--isc-sectionHeader_border_radius);
+    outline: none;
+}

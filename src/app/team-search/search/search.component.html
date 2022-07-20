@@ -1,0 +1,24 @@
+<div class="row" style="border:1px solid rgb(207, 202, 202);" width="100%">
+
+    <div id="isc_4A" eventproxy="isc_SectionHeader_2" width="100%" style="height: 25px; overflow: hidden; background-color: rgb(240, 240, 240); cursor: pointer; border-radius: 0px; border-color: rgb(208, 208, 208) rgb(97, 97, 97); border-style: solid none; border-width: 1px 0px; box-shadow: none;"
+        role="tab" aria-label="Critères de sélection" aria-expanded="true" (click)="criteriaShow()">
+        <table role="presentation" cellspacing="0" cellpadding="0" width="100%" style="table-layout: fixed; box-shadow: none;" height="25px">
+            <tbody>
+                <tr>
+                    <td class="sectionHeaderopened" style="border:none;border-radius:inherit;padding-top:0px;padding-bottom:0px;background-color:transparent;padding-right:566px;text-align:left;vertical-align:middle;white-space:nowrap">
+                        <img src={{iconOpen}} width="16" height="16" style="margin-right:6px;vertical-align:middle" name="isc_4Aicon" eventpart="icon" suppress="TRUE" draggable="true">
+                        <div id="isc_49" unselectable="on" style="display:inline-block;margin-left:-22px;box-sizing:border-box;max-width:100%;padding-left:22px;vertical-align:middle;overflow:hidden;text-overflow:ellipsis">
+                            Critères de sélection</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row" style="height: 75px; margin: 10px;" *ngIf="isShown">
+        <input type="date" style="margin: 10px;">
+        <button type="button" class="btnRefresh" name="buttonSearch" (click)='getDailyPlanning()' style="width: 118px; height: 20px; z-index: 201116; overflow: hidden; background-color: rgb(255, 255, 255); cursor: pointer; outline-style: none; border-radius: 30px; border-color: rgb(37, 45, 58); border-style: solid; border-width: 1px; box-shadow: none;">Appliquer
+        </button>
+    </div>
+
+</div>

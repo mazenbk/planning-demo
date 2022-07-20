@@ -1,0 +1,79 @@
+<div class="row" style="border:1px solid rgb(207, 202, 202);" width="100%">
+
+    <div id="isc_4A" eventproxy="isc_SectionHeader_2" width="100%" style="height: 25px; overflow: hidden; background-color: rgb(240, 240, 240); cursor: pointer; border-radius: 0px; border-color: rgb(208, 208, 208) rgb(97, 97, 97); border-style: solid none; border-width: 1px 0px; box-shadow: none;"
+        role="tab" aria-label="Planning" aria-expanded="true">
+        <table role="presentation" cellspacing="0" cellpadding="0" width="100%" style="table-layout: fixed; box-shadow: none;" height="25px">
+            <tbody>
+                <tr>
+                    <td class="sectionHeaderopened" style="border:none;border-radius:inherit;padding-top:0px;padding-bottom:0px;background-color:transparent;padding-right:566px;text-align:left;vertical-align:middle;white-space:nowrap">
+                        <div id="isc_49" unselectable="on" style="display:inline-block;margin-left:-22px;box-sizing:border-box;max-width:100%;padding-left:22px;vertical-align:middle;overflow:hidden;text-overflow:ellipsis">
+                            Planning</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div fxFlex="1 0 100%" fxLayout="column" fxLayoutAlign="start stretch">
+
+
+        <div class="table-container">
+            <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)" class="mat-elevation-z8">
+
+                <ng-container *ngFor="let fieElem of listGridFields;">
+                    <ng-container *ngIf="fieElem.sticky" matColumnDef="{{fieElem.name}}" sticky>
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header [ngStyle]="fieElem.style" rowspan="2">{{fieElem.title}}
+
+                            <button class="grid-view-header-menu" mat-icon-button [matMenuTriggerFor]="menu">
+                              <mat-icon >menu</mat-icon>
+                            </button>
+
+                            <mat-menu #menu>
+                                <button mat-menu-item (click)="groupBy($event, fieElem);">Group By This Field</button>
+                                <button mat-menu-item (click)="unGroupBy($event, fieElem);">Ungroup</button>
+                                <button mat-menu-item [matMenuTriggerFor]="column">Column</button>
+                            </mat-menu>
+
+                            <mat-menu #column="matMenu">
+                                <mat-checkbox #menuItems *ngFor="let item of listGridFieldsSelected; let i = index;" [(ngModel)]="!item.hideField" (click)="$event.stopPropagation()" (change)="onColumnSelect($event, item)">
+                                    <ng-container *ngIf="!item.isDayField">
+                                        {{item.title}}
+                                    </ng-container>
+                                </mat-checkbox>
+                            </mat-menu>
+                        </th>
+                        <td mat-cell *matCellDef="let element "> {{element[fieElem.name]}}</td>
+                    </ng-container>
+                    <ng-container *ngIf="!fieElem.sticky && !fieElem.isDayField" matColumnDef="{{fieElem.name}}">
+                        <th mat-header-cell *matHeaderCellDef [ngStyle]="fieElem.style" rowspan="2">{{fieElem.title}}</th>
+                        <td mat-cell *matCellDef="let element" [ngStyle]="getFullStyle(element, fieElem.name)" (contextmenu)="onContextMenu($event, element, fieElem)"> {{element[fieElem.name]}}</td>
+                    </ng-container>
+                    <ng-container *ngIf="fieElem.isDayField" matColumnDef="{{fieElem.name}}">
+                        <th mat-header-cell *matHeaderCellDef [ngStyle]="fieElem.style">{{fieElem.title}}</th>
+                        <td mat-cell *matCellDef="let element" [ngStyle]="getFullStyle(element, fieElem.name)" (contextmenu)="onContextMenu($event, element, fieElem)"> {{element[fieElem.name]}}</td>
+                    </ng-container>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+                <!-- Group header -->
+                <ng-container matColumnDef="groupHeader">
+                    <td mat-cell colspan="10" *matCellDef="let group" class="mat-group-row">
+                        <mat-icon *ngIf="group.expanded">expand_less</mat-icon>
+                        <mat-icon *ngIf="!group.expanded">expand_more</mat-icon>
+                        <strong>{{group[groupByColumns[group.level-1]]}}</strong>
+                    </td>
+                </ng-container>
+                <tr mat-row *matRowDef="let row; columns: ['groupHeader']; when: isGroup" (click)="groupHeaderClick(row)"> </tr>
+            </table>
+            <div style="visibility: hidden; position: fixed" [style.left]="contextMenuPosition.x" [style.top]="contextMenuPosition.y" [matMenuTriggerFor]="contextMenu">
+            </div>
+            <mat-menu #contextMenu="matMenu">
+                <ng-template matMenuContent let-item="item">
+                    <button mat-menu-item (click)="onContextMenuAction(item)">Affichage du jour sélectionné</button>
+                    <button mat-menu-item (click)="getPlanningComponent()">Affichage des données volumineux</button>
+                </ng-template>
+            </mat-menu>
+        </div>
+    </div>
+</div>

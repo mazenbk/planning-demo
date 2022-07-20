@@ -1,0 +1,5 @@
+.btnRefresh {
+    background: url('../../../assets/images/actions/refresh.png') no-repeat left center;
+    background-size: 18%;
+    padding-left: 20px;
+}

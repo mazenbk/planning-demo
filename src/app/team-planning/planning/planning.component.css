@@ -1,0 +1,185 @@
+table {
+    width: 99vw;
+    height: 100%;
+    border-collapse: separate;
+    /* Don't collapse */
+    border-spacing: 0;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+}
+
+table thead th {
+    padding: 3px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 25vw;
+    background: white;
+}
+
+table td {
+    background: #fff;
+    padding: 4px 5px;
+    text-align: left;
+    height: '10px';
+}
+
+table tbody th {
+    font-weight: 100;
+    font-style: italic;
+    text-align: left;
+    position: relative;
+    height: '10px';
+}
+
+table thead th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    height: '10px';
+}
+
+table tbody th {
+    position: sticky;
+    left: 0;
+    background: white;
+    z-index: 1;
+    height: '10px';
+}
+
+caption {
+    text-align: left;
+    padding: 0.25rem;
+    position: sticky;
+    left: 0;
+}
+
+.mat-row .mat-cell {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    cursor: pointer;
+    max-height: 22px;
+    min-height: 10px;
+    font-size: 11px;
+    height: 22px !important;
+    word-wrap: break-word !important;
+    white-space: nowrap;
+}
+
+.mat-header-cell {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    cursor: pointer;
+    background-color: rgb(71, 167, 227);
+}
+
+.mat-row:hover .mat-cell {
+    border-color: currentColor;
+    height: 10px;
+    font-size: 11px;
+    max-height: 22px;
+    min-height: 10px;
+}
+
+.demo-row-is-clicked {
+    font-weight: bold;
+}
+
+.mat-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-container {
+    width: 99vw;
+    height: 100%;
+}
+
+td.mat-column-star {
+    width: 20px;
+    padding-right: 8px;
+}
+
+th.mat-column-position,
+td.mat-column-position {
+    padding-left: 8px;
+}
+
+.mat-table-sticky-border-elem-right {
+    border-left: 1px solid #e0e0e0;
+}
+
+.mat-table-sticky-border-elem-left {
+    border-right: 1px solid #e0e0e0;
+}
+
+.mat-group-row {
+    border: 1px solid #e7e7e7;
+    font-weight: bold;
+    text-align: left;
+    height: 10px !important;
+}
+
+
+/* :host {
+  height: 100%;
+
+  mat-sidenav-container {
+      display: flex;
+      flex-flow: column;
+      height: 100%;
+      width: 100%;
+
+      mat-sidenav {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          min-width: 300px;
+          max-width: 300px;
+          overflow-y: hidden;
+          background: white;
+          padding: 0 6px 0 18px;
+      }
+
+      mat-sidenav-content {
+          display: flex;
+          flex-direction: column;
+          align-content: flex-start;
+          justify-content: flex-start;
+          height: 100%;
+          overflow-y: hidden;
+          background: white;
+
+          // taken from https://github.com/angular/components/issues/8680            
+          .table-container {
+              width: 100vw; // <!-- THIS WORKS for horizontal scrolling (all columns visibile)
+              // width: 100%; // <!-- THIS DOESNT for horizontal scrolling (no scrollbars)
+              // width: 2800px; // <!-- THIS ALSO DOESNT for horizontal scrolling (no scrollbars)
+          }
+
+          .mat-table {
+              display: block;
+              width: 100%;
+              overflow-x: auto;
+          }
+
+      }
+
+  }
+}
+
+// table column width helper for mat-tables
+@for $index from 0 through 200 {
+  $size: $index * 2;
+
+  .table-column-#{$size} {
+      // flex: 0 1 #{$size}#{"px"};
+      min-width: #{$size}#{"px"};
+  }
+} */
